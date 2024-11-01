@@ -1,0 +1,46 @@
+window {
+    background-color: rgba (0, 0, 0, 0.8);
+    color: rgb(160, 182, 255);
+    border: none;
+    border-radius:12px; 
+    font-family: "CaskaydiaCove Nerd Font";
+}
+
+/* search entry */
+entry {
+    background-color: rgba (0, 0, 0, 0.2);
+}
+
+button, image {
+    background: none;
+    border: none;
+}
+
+button {
+    transition: 0.5s ease-in;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(160, 182, 255);
+}
+
+button:hover {
+    transition: 0.5s ease-out;
+    background-color: rgba(226, 110, 229, 0.1);
+}
+
+/* in case you wanted to give category buttons a different look */
+#category-button {
+    margin: 0 10px 0 10px
+}
+
+#pinned-box {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted gray
+}
+
+#files-box {
+    padding: 5px;
+    border: 1px dotted gray;
+    border-radius: 15px
+}

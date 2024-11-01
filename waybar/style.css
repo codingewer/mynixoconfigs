@@ -1,0 +1,247 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Hack";
+  min-height: 1px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #a0b6ff;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces {
+  border-radius: 10px;
+  margin: 3px;
+  font-weight: 900;
+  background-color: rgba(32, 41, 65, 0.2);
+}
+
+#workspaces button {
+  transition: 0.5s ease-in;
+  color: #BFCFE7;
+  background: transparent;
+
+}
+
+#workspaces button.persistent {
+  color: #7c818c;
+}
+
+
+#workspaces button:hover {
+  background: none;
+}
+
+#workspaces button.active {
+  transition: 0.5s ease-out;
+}
+
+
+#pulseaudio.muted {
+  background-color: rgba(144, 177, 177, 0.39);
+}
+
+
+#temperature.critical {
+  background-color: rgba(235, 78, 75, 0.562);
+}
+
+
+#battery,
+#custom-gpu-usage,
+#backlight,
+#temperature,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#clock,
+#custom-poweroff,
+#custom-logout,
+#custom-reboot,
+#custom-suspend,
+#custom-lock,
+#tray,
+#mpris,
+#custom-cava,
+#custom-weather,
+#custom-swaync,
+#backlight-slider,
+#pulseaudio-slider {
+  margin-right: 5px;
+  transition: none;
+  padding: 0px 15px;
+  border-radius: 12px;
+  margin: 3px;
+  background-color: rgba(32, 41, 65, 0.2);
+}
+
+#custom-poweroff,
+#custom-logout,
+#custom-reboot,
+#custom-suspend,
+#custom-lock {
+  font-size: 18px;
+  font-weight: 900;
+  padding: 0px 15px;
+  transition: 0.5s ease-in;
+}
+
+#custom-poweroff:hover,
+#custom-logout:hover,
+#custom-reboot:hover,
+#custom-suspend:hover,
+#custom-lock:hover {
+  transition: 0.5s ease-in;
+  background-color: rgba(32, 41, 65, 1);
+}
+
+
+.modules-left {
+  margin-left: 8px;
+  margin: 5px 0px 0px 5px;
+  transition: none;
+  border-radius: 12px;
+  padding: 3px 5px;
+  font-size: 14px;
+  background: #07090e;
+
+}
+
+.modules-center {
+  margin: 5px 0px 0px 0px;
+  transition: none;
+  border-radius: 12px;
+  padding: 3px 5px;
+  font-size: 14px;
+  background: #07090e;
+}
+
+.modules-right {
+  border-radius: 12px;
+  transition: none;
+  margin: 5px 5px 0px 0px;
+  font-size: 14px;
+  background: #07090e;
+  padding: 3px 5px;
+}
+
+
+#custom-power {
+  padding: 0px 15px;
+
+}
+
+#battery.charging {
+  color: #ffffff;
+  background-color: rgba(110, 195, 229, 0.5);
+}
+
+#battery.warning:not(.charging) {
+  background-color: rgba(255, 189, 97, 0.418);
+}
+
+#battery.critical:not(.charging) {
+  background: rgba(38, 166, 91, 0.5);
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#backlight-slider slider,
+#pulseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0.1;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 100%;
+}
+
+#backlight-slider trough,
+#pulseaudio-slider trough {
+  min-height: 10px;
+  min-width: 100px;
+  border-radius: 10px;
+  background: rgba(160, 182, 255, 0.3);
+}
+
+#backlight-slider highlight,
+#pulseaudio-slider highlight {
+  border-radius: 10px;
+  min-height: 7px;
+  background: rgba(160, 182, 255, 0.7);
+}
+
+#backlight-slider,
+#pulseaudio-slider {
+  min-height: 0;
+  padding: 0px 10px;
+}
+
+#custom-cava,
+#tray {
+  border-left: 0px;
+  border-right: 0px;
+  font-family: "bargraph";
+  font-size: 14px;
+  margin-left: 5px;
+  font-size: 12px;
+  padding: 0px 10px;
+}
+
+#mpris {
+  margin-left: 5px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#custom-weather {
+  padding: 0px 10px;
+  transition: none;
+}
+
+tooltip {
+  border-radius: 12px;
+  background: #07090e;
+  border: none;
+  padding: 20px;
+  font-size:18px;
+}
+
+tooltip label {
+  color:  rgb(160, 182, 255);
+  margin: 10px;
+}
+
+#tray menu {
+  background-color: #07090e;
+  padding: 5px;
+  border-radius: 12px;
+  border: none;
+}q
+
+#tray menu * {
+  color:  rgb(160, 182, 255);
+  border: none;
+  border-radius: 12px;
+}
+
+#tray menu *:hover {
+  background: rgba(160, 182, 255, 0.1);
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}

@@ -1,0 +1,6 @@
+if status is-interactive
+   fastfetch --logo /home/codingewer/wallps/cartoon-robot-with-blue-background_800563-12518.jpg --logo-width 40 --logo-height 20
+   starship init fish | source
+    # Commands to run in interactive sessions can go here
+end
+
